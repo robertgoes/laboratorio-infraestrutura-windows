@@ -95,3 +95,10 @@ nltest /dsgetdc:labad.local
 * Revisar a configuração DNS das interfaces do servidor.
 * Adicionar capturas de tela dos testes.
 * Documentar um caso de troubleshooting com diagnóstico, correção e validação.
+
+## Evidências do laboratório
+
+### Switch virtual LAB-AD — Hyper-V
+
+![Configuração do switch virtual LAB-AD](images/hyperv-switch-lab-ad.png)
+
