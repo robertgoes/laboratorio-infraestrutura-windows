@@ -102,3 +102,23 @@ nltest /dsgetdc:labad.local
 
 ![Configuração do switch virtual LAB-AD](images/hyperv-switch-lab-ad.PNG)
 
+### 6. Validação do DHCP
+
+**Comandos executados no servidor:**
+
+```powershell
+Get-Service DHCPServer
+Get-DhcpServerv4Scope
+Get-DhcpServerv4Lease -ScopeId 192.168.50.0
+```
+
+**Resultados observados:**
+
+* Serviço DHCP em execução.
+* Escopo `192.168.50.0/24` ativo.
+* Intervalo disponível: `192.168.50.100` a `192.168.50.200`.
+* Concessão registrada para `CLIENTE-W10`, com IP `192.168.50.101`.
+* Estado da concessão: `Active`.
+
+**Competência demonstrada:** verificação do serviço DHCP, leitura do escopo IPv4 e confirmação de concessão de endereço IP.
+
