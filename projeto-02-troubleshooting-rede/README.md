@@ -43,3 +43,20 @@ O teste abaixo valida o estabelecimento de uma conexão TCP com `www.microsoft.c
 
 ![Resultado do teste HTTPS](./troubleshooting-teste-https.png)
 
+## Caso prático — validação de conectividade
+
+**Cenário:** verificar se uma estação Windows possui conectividade com a rede local e com um destino externo.
+
+**Procedimento de diagnóstico:**
+1. Verificação da configuração IP com `ipconfig`.
+2. Teste de conectividade com o servidor/gateway usando `ping`.
+3. Validação da resolução DNS com `nslookup`.
+4. Análise do caminho de rede com `tracert`.
+5. Teste de conectividade IP externa com `ping 8.8.8.8`.
+6. Validação da conexão TCP HTTPS com `Test-NetConnection`.
+
+**Resultado:** todos os testes de conectividade executados apresentaram resultados compatíveis com o funcionamento dos componentes testados.
+
+**Conclusão técnica:** não foi reproduzida uma falha de conectividade neste cenário. Em um atendimento real, se o usuário ainda relatasse problemas, o próximo passo seria identificar o site, serviço ou aplicação afetada e reproduzir o sintoma específico.
+
+**Classificação:** exercício de diagnóstico preventivo, sem incidente confirmado.
