@@ -100,5 +100,5 @@ nltest /dsgetdc:labad.local
 
 ### Switch virtual LAB-AD — Hyper-V
 
-![Configuração do switch virtual LAB-AD](images/hyperv-switch-lab-ad.png)
+![Configuração do switch virtual LAB-AD](images/hyperv-switch-lab-ad.PNG)
 
