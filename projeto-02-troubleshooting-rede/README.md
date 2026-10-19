@@ -36,3 +36,10 @@ Esses resultados validam apenas os destinos e serviços testados; não garantem 
 * Análise de rota com `tracert`
 * Validação de porta TCP com `Test-NetConnection`
 * Interpretação de resultados sem presumir uma falha não comprovada
+
+## Evidência — teste de conectividade HTTPS
+
+O teste abaixo valida o estabelecimento de uma conexão TCP com `www.microsoft.com` na porta 443.
+
+![Resultado do teste HTTPS](./troubleshooting-teste-https.png)
+
