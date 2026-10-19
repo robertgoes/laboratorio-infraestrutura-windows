@@ -122,3 +122,25 @@ Get-DhcpServerv4Lease -ScopeId 192.168.50.0
 
 **Competência demonstrada:** verificação do serviço DHCP, leitura do escopo IPv4 e confirmação de concessão de endereço IP.
 
+### 7. Validação do DNS
+
+**Comandos utilizados:**
+
+```powershell
+nslookup labad.local
+nslookup www.microsoft.com
+Get-DnsServerForwarder
+```
+
+**Resultados observados:**
+
+* `labad.local` foi resolvido para `192.168.50.10` e `192.168.15.10`.
+* `www.microsoft.com` foi resolvido para endereços IPv4 e IPv6.
+* O DNS está configurado para usar root hints, sem encaminhadores explícitos exibidos no resultado.
+* O servidor DNS respondeu às consultas realizadas.
+
+**Ponto de atenção:** o controlador de domínio possui dois registros A, correspondentes às interfaces interna e externa. A necessidade de publicar ambos deve ser avaliada conforme a arquitetura de rede.
+
+**Competência demonstrada:** consulta de registros DNS, validação de resolução interna e externa e interpretação de respostas do `nslookup`.
+
+
